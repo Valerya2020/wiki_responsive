@@ -6,7 +6,44 @@
 @media all and (max-width: 1020px) {
 	article img { width: 100%; }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
+@media only screen and (min-width: 1280px) {
+  /* Desktop */
+	article > * { margin-left: 360px;
+		margin-right: 200px;}
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* iPad */
+		article img { width: 100%; }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* iPad Portrait */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* iPad Landscape */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone */
+	article img { width: 100%; }
+	article > * { margin-left: 10px;
+		margin-right: 10px;}
+	article p {font-size: 18px;}
+	article h1 {font-size: 24px;}
+		article h2 {font-size: 21px;}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* iPhone Portrait */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  /* iPhone Landscape */
+}
+/* @media all and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
 article > * { width: calc(100% - 40px); }
 article h1 {font-size: 36px;}
 article p {font-size: 17px;}
@@ -41,4 +78,4 @@ article p {font-size: 20px;}
 article h2 {font-size: 29px;}
 article h3 {font-size: 25px;}
 article h4 {font-size: 22px;}
-}
+} */
