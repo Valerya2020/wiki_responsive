@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title></title>
+    <style media="screen">
+      body {
+        width: 1440px;
+        margin: 0 auto;
+        background: white;
+        height: 3252px;
+        display: block;
+        position: relative;
+      }
+      html {
+        background: #bbb;
+        position: relative;
+        height: 100%;
+
+      }
+      body::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        /* background: url('images/1440.jpg'); */
+        height: 100%;
+        display: block;
+        opacity: .2;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+      }
+      .two {
+        padding-top: 60px;
+      }
+      .three img {
+        margin-top: 70px;
+      }
+
+
+      section div {
+        width: 50%;
+        overflow: hidden;
+        padding-left: 40px;
+      }
+
+      section h1,
+      section p {
+        width: 550px;
+        margin: 0 auto;
+        font-weight: normal;
+      }
+      section h1,
+      .bottom_block h1 {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 26px;
+        font-weight: normal;
+      }
+      section p,
+      .bottom_block p {
+        font-size: 26px;
+        line-height: 34px;
+      }
+      section div:nth-of-type(2) h1,
+      section div:nth-of-type(2) p {
+        margin-left: 0;
+      }
+      section div:nth-of-type(2) h1 {
+        margin-top: 20px;
+      }
+      .bottom_block p,
+      .bottom_block h1 {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .bottom_block {
+        text-align: center;
+        padding-top: 50px;
+        border-top: 1px solid #bbb;
+      }
+      .btn {
+      text-decoration: none;
+      border: 1px solid #bbb;
+      padding: 15px 30px;
+      background: white;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 60px 5px 0;
+      }
+      .btn-black {
+        color: white;
+        background: black;
+        border-color: black;
+        text-decoration: none;
+        border: 1px solid #bbb;
+        padding: 15px 30px;
+        border-radius: 4px;
+        display: inline-block;
+        margin: 60px 5px 0;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="menubar">
+      <a href="index.html"><img src="images/logo.svg" alt=""></a>
+      <a href="about.html">О проекте</a>
+    </div>
+    <section>
+    <div>
+      <h1>Наглядный пример,<br> чтобы учиться веб-вёрстке</h1>
+      <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и&nbsp;каскадных таблиц стилей CSS</p>
+    </div>
+      <div>
+        <img src="images/about1.png" alt="">
+      </div>
+    </section>
+    <section class="two">
+      <div>
+          <img src="images/about2.png" alt="">
+      </div>
+     <div>
+      <h1>С нуля до первого сайта под&nbsp;компьютеры, смартфоны и&nbsp;планшеты</h1>
+      <p>Чтобы начать изучать веб-вёрстку на&nbsp;этом проетке, не&nbsp;требуется каких-то специальных знаний, кроме&nbsp;базового умения пользоваться компьютером</p>
+    </div>
+
+    </section>
+    <section class="three">
+    <div>
+      <h1>Реальный проект, реальный рабочий процесс</h1> <br>
+      <p>Обучение приближено к&nbsp;работе в&nbsp;реальной жизни, работа разбита на&nbsp;этапы от&nbsp;типографики, создания меню и&nbsp;использования эффектов, до&nbsp;адаптации под&nbsp;мобильные устройства и&nbsp;использования JavaScript скриптов</p>
+    </div>
+      <div>
+        <img src="images/about3.png" alt="">
+      </div>
+    </section>
+    <div class="bottom_block">
+      <h1>Возможность самостоятельного и&nbsp;курируемого обучения</h1>
+      <p>Вы можете обучаться самостоятельно по&nbsp;исходному коду проета, выложенному на&nbsp;GitHub, или&nbsp;записаться на&nbsp;курс "Основы <br>веб-вёрстки в&nbsp;Школе Дизайна НИУ&nbsp;ВШЭ"</p>
+      <a class="btn" href="Исходный код от GitHub">Исходный код от GitHub</a>
+      <a class="btn-black" href="Курс в школе дизайна">Курс в школе дизайна</a>
+    </div>
+  </body>
+</html>
