@@ -8,7 +8,7 @@
 }
 @media only screen and (min-width: 1280px) {
   /* Desktop */
-	article > * { margin-left: 360px;
+	article  * { margin-left: 360px;
 		margin-right: 200px;}
 
 }
@@ -29,7 +29,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* iPhone */
 	article img { width: 100%; }
-	article > * { margin-left: 10px;
+	article  * { margin-left: 10px;
 		margin-right: 10px;}
 	article p {font-size: 18px;}
 	article h1 {font-size: 24px;}
