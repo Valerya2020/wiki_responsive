@@ -1,6 +1,6 @@
-article > * { width: 700px; margin: 0 auto;
+article * { width: 700px; margin: 0 auto;
 }
-article h1, article h2, article h3, article h4 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
+article h1, h2, h3 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;
 }
 article h1 { margin-top: 67px; font-size: 38px; line-height: 45px;
 }
@@ -18,22 +18,28 @@ article h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0
 article h3 + p,
 article h3 + blockquote { margin-top: 6px;
 }
-article h4 { margin-top: 26px; font-size: 20px; line-height: 32px; color: rgba(0, 0, 0, .8);
-}
-article h4 + p,
-article h4 + blockquote { margin-top: 5px;
-}
 article p, blockquote, li { margin-top: 29px; font-size: 20px; line-height: 34px;
 }
-article blockquote { font-style: italic;
-  position: relative;
+article h4 + p,
+article h4 + blockquote { margin-top: 30px;
 }
-article blockquote::before {
+article h4 { margin-top: 67px; font-size: 24px; line-height: 34px; color: rgba(0, 0, 0, .8);
+}
+article h5 { margin-top: 67px; font-size: 20px; line-height: 34px; color: rgba(0, 0, 0, .8);
+}
+article h5 + p,
+article h5 + blockquote { margin-top: 30px;
+}
+article blockquote { font-style: italic;
+position: relative;
+}
+article blockquote::before  {
   content: "";
   width: 3px;
-  height:  100%;
+  height: 100%;
   background: black;
   position: absolute;
+  display: block;
   top: 0;
   left: -20px;
 }
@@ -48,7 +54,6 @@ article img + ul { margin-top: 77px;
 article h2 + img { margin-top: 82px;
 }
 article h3 + img { margin-top: 81px;
-}
 article ul {
-  list-style-type: disc;
-}
+    list-style-type: disc;
+  }
