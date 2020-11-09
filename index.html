@@ -22,6 +22,33 @@
         background: #eee;
 
       }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* iPhone */
+      	.index_item {
+          width: 100%;
+        margin: 0 auto 0;
+      margin-top: 0;
+    border: none;
+  border-radius: none;
+box-shadow: none;}
+          .index_item h1 { font-size: 28px;
+          line-height: 40px;}
+          .index_item:nth-of-type(2) {
+            margin-top: 0;
+          }
+      }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* iPad */
+        .index_item:nth-of-type(2) {
+          margin-top: 40px;
+        }
+        .index_item {
+          width: calc(100% - 20px);
+        margin: 0 auto 10px;}
+      }
+      @media only screen and (min-device-width: 1080px) {
+        /* iPad */
+      }
 
     </style>
   </head>

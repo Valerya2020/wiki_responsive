@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
     <link rel="icon" type="image/png" href="images/favicon.png"/>
-    <title></title>
+    <title>Wikimedium</title>
     <style media="screen">
       body {
         width: 1440px;
@@ -107,6 +107,19 @@
         display: inline-block;
         margin: 60px 5px 0;
       }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* iPhone */
+.text_one {width: calc(100% - 40px);}
+      }
+.image_one {width: 100%;}
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* iPad */
+
+      }
+      @media only screen and (min-device-width: 1080px) {
+        /* iPad */
+      }
+
     </style>
 
   </head>
@@ -116,11 +129,11 @@
       <a href="about.html">О проекте</a>
     </div>
     <section>
-    <div>
+    <div class="text_one">
       <h1>Наглядный пример,<br> чтобы учиться веб-вёрстке</h1>
       <p>Разработан для изучения основ веб-вёрстки, языка гипертекстовой разметки HTML и&nbsp;каскадных таблиц стилей CSS</p>
     </div>
-      <div>
+      <div class="image_one">
         <img src="images/about1.png" alt="">
       </div>
     </section>
